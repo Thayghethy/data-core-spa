@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos Globais */
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #240151;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #240151; 
+}
+
+/* Utilitário Customizado: Brilho do Texto */
+.text-neon-glow {
+  text-shadow: 
+    0 0 5px rgba(187, 134, 252, 0.8),
+    0 0 10px rgba(187, 134, 252, 0.6);
+}
+
+/* Utilitário Customizado: Brilho da Imagem/Ícone */
+.icon-neon-glow {
+  filter: 
+    drop-shadow(0 0 5px #BB86FC)
+    drop-shadow(0 0 10px rgba(187, 134, 252, 0.5));
+}
