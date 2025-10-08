@@ -1,13 +1,21 @@
 // src/App.tsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Header from './components/Header';
 import ActionCard from './components/ActionCard';
-import CarimbadorMenu from './components/CarimbadorMenu';
-import CarimboForm from './components/CarimboForm'; // NOVO IMPORT
+import CarimbadorMenu from './components/CarimbadorMenu.tsx';
+import CarimboForm from './components/CarimboForm';
 
 // Definindo os estados possíveis da aplicação
 type AppView = 'home' | 'carimbadorMenu' | 'carimboForm';
-type CarimboType = 'ATC' | 'ESSE_FSP' | 'ESSE_CONTROLE' | 'MASSIVA' | 'REGIONAL_V2' | 'PARCEIROS' | 'TX' | null; // Tipos ajustados
+type CarimboType =
+  | 'ATC'
+  | 'ESSE_FSP'
+  | 'ESSE_CONTROLE'
+  | 'MASSIVA'
+  | 'REGIONAL_V2'
+  | 'PARCEIROS'
+  | 'TX'
+  | null;
 
 function App() {
   const neonColor = 'text-[#BB86FC]';
@@ -20,15 +28,15 @@ function App() {
 
   const handleSelectCarimbo = (type: CarimboType) => {
     setCurrentCarimbo(type);
-    setCurrentView('carimboForm'); // MUDA PARA A TELA DE FORMULÁRIO
+    setCurrentView('carimboForm');
   };
 
   const handleBack = () => {
     if (currentView === 'carimboForm') {
       setCurrentCarimbo(null);
-      setCurrentView('carimbadorMenu'); // Volta do formulário para o menu
+      setCurrentView('carimbadorMenu');
     } else {
-      setCurrentView('home'); // Volta do menu para a Home
+      setCurrentView('home');
     }
   };
 
@@ -40,49 +48,47 @@ function App() {
           <main className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ActionCard title="Tramitação" iconPath="/images/Tramitacao.png" />
             <ActionCard title="Links" iconPath="/images/Links.png" />
-            
             <div onClick={handleCarimbadorClick}>
               <ActionCard title="Carimbador" iconPath="/images/Carimbo.png" />
             </div>
           </main>
         </>
       );
-    } 
-    
+    }
+
     if (currentView === 'carimbadorMenu') {
       return (
-        <CarimbadorMenu 
+        <CarimbadorMenu
           onSelectCarimbo={handleSelectCarimbo}
-          onBack={handleBack} 
+          onBack={handleBack}
         />
       );
     }
 
     if (currentView === 'carimboForm' && currentCarimbo) {
       return (
-        <CarimboForm 
-          type={currentCarimbo} 
-          onBack={handleBack} 
-        />
+        <CarimboForm type={currentCarimbo} onBack={handleBack} />
       );
     }
+
+    return null;
   };
 
   return (
     <div className="min-h-screen bg-black flex justify-center py-8 px-4">
-      <div 
+      <div
         className="max-w-7xl w-full p-8 rounded-3xl border border-app-border"
-        style={{ 
+        style={{
           backgroundColor: '#0f001c',
-          boxShadow: '0 0 30px rgba(187,134,252,0.1)'
+          boxShadow: '0 0 30px rgba(187,134,252,0.1)',
         }}
       >
         {renderContent()}
-        
+
         {/* Footer só aparece na Home */}
         {currentView === 'home' && (
           <footer className="mt-8 text-center">
-            <p 
+            <p
               className={`text-sm tracking-widest uppercase ${neonColor} opacity-70`}
               style={{ textShadow: '0 0 2px rgba(187,134,252,0.4)' }}
             >
