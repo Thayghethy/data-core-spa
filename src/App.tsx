@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Header from './components/Header';
 import ActionCard from './components/ActionCard';
 import CarimbadorMenu from './components/CarimbadorMenu';
