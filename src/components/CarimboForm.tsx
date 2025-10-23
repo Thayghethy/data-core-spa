@@ -348,7 +348,7 @@ ${formState.logs || 'N/A'}
             <NeonTextArea label="Diagnóstico" name="diagnostico" value={formState.diagnostico} onChange={handleInputChange} />
             <NeonTextArea label="Logs" name="logs" value={formState.logs} onChange={handleInputChange} />
             
-            <label className="text-white flex items-center mb-4">
+            /*<label className="text-white flex items-center mb-4">
               <input 
                 type="checkbox" 
                 name="cpeInacessivel" 
@@ -363,7 +363,7 @@ ${formState.logs || 'N/A'}
             <div className="grid grid-cols-2 gap-4">
               <NeonInput label="Interface WAN" name="interfaceWAN" value={formState.interfaceWAN} onChange={handleInputChange} type="text" />
               <NeonInput label="Interface LAN" name="interfaceLAN" value={formState.interfaceLAN} onChange={handleInputChange} type="text" />
-            </div>
+            </div>*/
             {actionButtons('ESSE CONTROLE')}
           </div>
         );
