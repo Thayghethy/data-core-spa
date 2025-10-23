@@ -13,7 +13,7 @@ export const tramitacaoData = [
     { Categoria: 'GPON', Falha: 'Quedas de sincronismo', DSP: 'Diagnostico', FSP: 'Diagnostico', Destino: 'Diagnostico' },
     { Categoria: 'GPON', Falha: 'Sem configuração', DSP: 'ESSE', FSP: 'N/DADOS', Destino: 'ESSE' },
     { Categoria: 'GPON', Falha: 'Erros ou atenuação', DSP: 'ESSE', FSP: 'ESSE', Destino: 'ESSE' },
-    { Categoria: 'GPONU', Falha: 'Porta/LAN/ONT down', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
+    { Categoria: 'GPON', Falha: 'Porta/LAN/ONT down', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
     { Categoria: 'GPON', Falha: 'Sem mac do CPE', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
     { Categoria: 'GPON', Falha: 'Porta PON down (com TA)', DSP: 'Massiva', FSP: 'Massiva', Destino: 'Massiva' },
     { Categoria: 'GPON', Falha: 'Porta PON down e sem TA válida', DSP: 'Pre_massiva', FSP: 'Pre_massiva', Destino: 'Pre_massiva' },
