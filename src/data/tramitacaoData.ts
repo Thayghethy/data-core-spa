@@ -9,16 +9,16 @@ export const tramitacaoData = [
     { Categoria: 'PRAPS', Falha: 'Porta LAN down no modem', DSP: 'ESSE', FSP: 'ESSE', Destino: 'ESSE' },
 
     // CPE/ONU
-    { Categoria: 'CPE/ONU', Falha: 'Porta/Sem sincronismo', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
-    { Categoria: 'CPE/ONU', Falha: 'Quedas de sincronismo', DSP: 'Diagnostico', FSP: 'Diagnostico', Destino: 'Diagnostico' },
-    { Categoria: 'CPE/ONU', Falha: 'Sem configuração', DSP: 'ESSE', FSP: 'N/DADOS', Destino: 'ESSE' },
-    { Categoria: 'CPE/ONU', Falha: 'Erros ou atenuação', DSP: 'ESSE', FSP: 'ESSE', Destino: 'ESSE' },
-    { Categoria: 'CPE/ONU', Falha: 'Porta/LAN/ONT down', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
-    { Categoria: 'CPE/ONU', Falha: 'Sem mac do CPE', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
-    { Categoria: 'CPE/ONU', Falha: 'Porta PON down (com TA)', DSP: 'Massiva', FSP: 'Massiva', Destino: 'Massiva' },
-    { Categoria: 'CPE/ONU', Falha: 'Porta PON down e sem TA válida', DSP: 'Pre_massiva', FSP: 'Pre_massiva', Destino: 'Pre_massiva' },
-    { Categoria: 'CPE/ONU', Falha: 'Sem acesso ao OLT (com TA)', DSP: 'Massiva', FSP: 'Massiva', Destino: 'Massiva' },
-    { Categoria: 'CPE/ONU', Falha: 'Sem acesso ao OLT e sem TA válida', DSP: 'Pre_massiva', FSP: 'Pre_massiva', Destino: 'Pre_massiva' },
+    { Categoria: 'GPON', Falha: 'Porta/Sem sincronismo', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
+    { Categoria: 'GPON', Falha: 'Quedas de sincronismo', DSP: 'Diagnostico', FSP: 'Diagnostico', Destino: 'Diagnostico' },
+    { Categoria: 'GPON', Falha: 'Sem configuração', DSP: 'ESSE', FSP: 'N/DADOS', Destino: 'ESSE' },
+    { Categoria: 'GPON', Falha: 'Erros ou atenuação', DSP: 'ESSE', FSP: 'ESSE', Destino: 'ESSE' },
+    { Categoria: 'GPONU', Falha: 'Porta/LAN/ONT down', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
+    { Categoria: 'GPON', Falha: 'Sem mac do CPE', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
+    { Categoria: 'GPON', Falha: 'Porta PON down (com TA)', DSP: 'Massiva', FSP: 'Massiva', Destino: 'Massiva' },
+    { Categoria: 'GPON', Falha: 'Porta PON down e sem TA válida', DSP: 'Pre_massiva', FSP: 'Pre_massiva', Destino: 'Pre_massiva' },
+    { Categoria: 'GPON', Falha: 'Sem acesso ao OLT (com TA)', DSP: 'Massiva', FSP: 'Massiva', Destino: 'Massiva' },
+    { Categoria: 'GPON', Falha: 'Sem acesso ao OLT e sem TA válida', DSP: 'Pre_massiva', FSP: 'Pre_massiva', Destino: 'Pre_massiva' },
 
     // SWT
     { Categoria: 'SWT', Falha: 'Interface entre SW/A e SWT em down', DSP: 'TX', FSP: 'Regional V2', Destino: 'TX' },
