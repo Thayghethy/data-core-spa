@@ -169,11 +169,11 @@ ${formState.equipamentoAfetado || 'N/A'}
 ############ Transferência ESSE CONTROLE #############
 DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
 CPE INACESSÍVEL / CPE CLIENTE: ${formState.cpeInacessivel ? 'SIM' : 'NÃO'}
-/*IP WAN: ${formState.ipWAN || 'N/A'}
-IP LOOPBACK: ${formState.ipLoopback || 'N/A'}
-IP LAN: ${formState.ipLAN || 'N/A'}
-INTERFACE WAN: ${formState.interfaceWAN || 'N/A'}
-INTERFACE LAN: ${formState.interfaceLAN || 'N/A'}*/
+//IP WAN: ${formState.ipWAN || 'N/A'}
+//IP LOOPBACK: ${formState.ipLoopback || 'N/A'}
+//IP LAN: ${formState.ipLAN || 'N/A'}
+//INTERFACE WAN: ${formState.interfaceWAN || 'N/A'}
+//INTERFACE LAN: ${formState.interfaceLAN || 'N/A'}*/
 DIAGNÓSTICO:
 ${formState.diagnostico || 'N/A'}
 
@@ -348,22 +348,22 @@ ${formState.logs || 'N/A'}
             <NeonTextArea label="Diagnóstico" name="diagnostico" value={formState.diagnostico} onChange={handleInputChange} />
             <NeonTextArea label="Logs" name="logs" value={formState.logs} onChange={handleInputChange} />
             
-            /*<label className="text-white flex items-center mb-4">
-              <input 
-                type="checkbox" 
-                name="cpeInacessivel" 
-                checked={formState.cpeInacessivel} 
-                onChange={handleInputChange} 
-                className="mr-2 bg-transparent border-neon-purple" /> CPE Inacessível / CPE Cliente
-            </label>
+            //<label className="text-white flex items-center mb-4">
+            //  <input 
+            //    type="checkbox" 
+            //    name="cpeInacessivel" 
+            //    checked={formState.cpeInacessivel} 
+            //    onChange={handleInputChange} 
+            //    className="mr-2 bg-transparent border-neon-purple" /> CPE Inacessível / CPE Cliente
+            //</label>
             
-            <NeonInput label="IP WAN" name="ipWAN" value={formState.ipWAN} onChange={handleInputChange} type="text" />
-            <NeonInput label="IP Loopback" name="ipLoopback" value={formState.ipLoopback} onChange={handleInputChange} type="text" />
-            <NeonInput label="IP LAN" name="ipLAN" value={formState.ipLAN} onChange={handleInputChange} type="text" />
-            <div className="grid grid-cols-2 gap-4">
-              <NeonInput label="Interface WAN" name="interfaceWAN" value={formState.interfaceWAN} onChange={handleInputChange} type="text" />
-              <NeonInput label="Interface LAN" name="interfaceLAN" value={formState.interfaceLAN} onChange={handleInputChange} type="text" />
-            </div>*/
+            //<NeonInput label="IP WAN" name="ipWAN" value={formState.ipWAN} onChange={handleInputChange} type="text" />
+            //<NeonInput label="IP Loopback" name="ipLoopback" value={formState.ipLoopback} onChange={handleInputChange} type="text" />
+            //<NeonInput label="IP LAN" name="ipLAN" value={formState.ipLAN} onChange={handleInputChange} type="text" />
+            //<div className="grid grid-cols-2 gap-4">
+            //  <NeonInput label="Interface WAN" name="interfaceWAN" value={formState.interfaceWAN} onChange={handleInputChange} type="text" />
+            //  <NeonInput label="Interface LAN" name="interfaceLAN" value={formState.interfaceLAN} onChange={handleInputChange} type="text" />
+            //</div>*/
             {actionButtons('ESSE CONTROLE')}
           </div>
         );
