@@ -169,11 +169,11 @@ ${formState.equipamentoAfetado || 'N/A'}
 ############ Transferência ESSE CONTROLE #############
 DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
 CPE INACESSÍVEL / CPE CLIENTE: ${formState.cpeInacessivel ? 'SIM' : 'NÃO'}
-IP WAN: ${formState.ipWAN || 'N/A'}
+/*IP WAN: ${formState.ipWAN || 'N/A'}
 IP LOOPBACK: ${formState.ipLoopback || 'N/A'}
 IP LAN: ${formState.ipLAN || 'N/A'}
 INTERFACE WAN: ${formState.interfaceWAN || 'N/A'}
-INTERFACE LAN: ${formState.interfaceLAN || 'N/A'}
+INTERFACE LAN: ${formState.interfaceLAN || 'N/A'}*/
 DIAGNÓSTICO:
 ${formState.diagnostico || 'N/A'}
 
