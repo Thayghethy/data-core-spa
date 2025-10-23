@@ -9,7 +9,7 @@ export default {
       colors: {
         'neon-purple': '#BB86FC',
         'dark-bg': '#240151',
-        'card-bg': '#240151',
+        'card-bg': '#1a0033',
         'app-background': '#240151', 
         'app-border': 'rgba(187,134,252,0.3)', 
       },

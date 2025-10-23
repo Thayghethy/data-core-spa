@@ -120,122 +120,129 @@ const CarimboForm: React.FC<CarimboFormProps> = ({ type, onBack }) => {
       case 'ATC':
         // CORREÇÃO ATC: Incluindo TODOS os campos faltantes
         carimboText = `
-[CARIMBO ATC]
-[Nº SIGITM]: ${formState.sigitm || 'N/A'}
-[CLIENTE]: ${formState.cliente || 'N/A'}
-[DESIGNADOR]: ${formState.designador || 'N/A'}
-[PRODUTO]: ${formState.produto || 'N/A'}
-[OS/TBS]: ${formState.ostbs || 'N/A'}
-[ARD]: ${formState.ard || 'N/A'}
-[SPLITTER ATC]: ${formState.splitter || 'N/A'}
+################ COE - B2B ################
+############ Transferência ATC #############
+Nº SIGITM: ${formState.sigitm || 'N/A'}
+CLIENTE: ${formState.cliente || 'N/A'}
+DESIGNADOR: ${formState.designador || 'N/A'}
+PRODUTO: ${formState.produto || 'N/A'}
+OS/TBS: ${formState.ostbs || 'N/A'}
+ARD: ${formState.ard || 'N/A'}
+SPLITTER ATC: ${formState.splitter || 'N/A'}
 
-[OBSERVAÇÕES]:
+OBSERVAÇÕES:
 ${formState.observacoes || 'Nenhuma observação.'}
         `.trim();
         break;
       case 'REGIONAL_V2':
         carimboText = `
-[CARIMBO REGIONAL V2]
-[DESIGNADOR]: ${formState.designador || 'N/A'}
-[PRODUTO]: ${formState.produto || 'N/A'}
-[VELOCIDADE]: ${formState.velocidade || 'N/A'}
-[ARMÁRIO]: ${formState.armario || 'N/A'}
+################ COE - B2B ################
+############ Transferência REGIONAL V2 #############
+DESIGNADOR: ${formState.designador || 'N/A'}
+PRODUTO: ${formState.produto || 'N/A'}
+VELOCIDADE: ${formState.velocidade || 'N/A'}
+ARMÁRIO: ${formState.armario || 'N/A'}
 
-[DIAGNÓSTICO]:
+DIAGNÓSTICO:
 ${formState.diagnostico || 'N/A'}
 
-[LOG]:
+LOG:
 ${formState.log || 'Nenhum log.'}
         `.trim();
         break;
       case 'MASSIVA':
         carimboText = `
-[CARIMBO MASSIVA]
-[NÚMERO DA TA]: ${formState.numeroTA || 'N/A'}
+################ COE - B2B ################
+############ Transferência MASSIVA #############
+NÚMERO DA TA: ${formState.numeroTA || 'N/A'}
 
-[DIAGNÓSTICO]:
+DIAGNÓSTICO:
 ${formState.diagnostico || 'N/A'}
 
-[EQUIPAMENTO AFETADO]:
+EQUIPAMENTO AFETADO:
 ${formState.equipamentoAfetado || 'N/A'}
         `.trim();
         break;
       case 'ESSE_CONTROLE':
         carimboText = `
-[CARIMBO ESSE CONTROLE]
-[DEFEITO]: ${formState.defeitos.join(', ') || 'N/A'}
-[CPE INACESSÍVEL / CPE CLIENTE]: ${formState.cpeInacessivel ? 'SIM' : 'NÃO'}
-[IP WAN]: ${formState.ipWAN || 'N/A'}
-[IP LOOPBACK]: ${formState.ipLoopback || 'N/A'}
-[IP LAN]: ${formState.ipLAN || 'N/A'}
-[INTERFACE WAN]: ${formState.interfaceWAN || 'N/A'}
-[INTERFACE LAN]: ${formState.interfaceLAN || 'N/A'}
-[DIAGNÓSTICO]:
+################ COE - B2B ################
+############ Transferência ESSE CONTROLE #############
+DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
+CPE INACESSÍVEL / CPE CLIENTE: ${formState.cpeInacessivel ? 'SIM' : 'NÃO'}
+IP WAN: ${formState.ipWAN || 'N/A'}
+IP LOOPBACK: ${formState.ipLoopback || 'N/A'}
+IP LAN: ${formState.ipLAN || 'N/A'}
+INTERFACE WAN: ${formState.interfaceWAN || 'N/A'}
+INTERFACE LAN: ${formState.interfaceLAN || 'N/A'}
+DIAGNÓSTICO:
 ${formState.diagnostico || 'N/A'}
 
-[LOGS]:
+LOGS:
 ${formState.logs || 'N/A'}
         `.trim();
         break;
       case 'ESSE_FSP':
         carimboText = `
-[CARIMBO ESSE FSP]
-[ACESSO]: ${formState.acesso || 'N/A'}
-[OPERADORA]: ${formState.operadora || 'N/A'}
-[DESIGNAÇÃO DO LINK]: ${formState.designacaoLink || 'N/A'}
-[DEFEITO]: ${formState.defeitos.join(', ') || 'N/A'}
-[IP MODEM VSAT]: ${formState.ipModemVSAT || 'N/A'}
-[IP ACELERADOR]: ${formState.ipAcelerador || 'N/A'}
-[IP CPE]: ${formState.ipCPE || 'N/A'}
-[DIAGNÓSTICO]:
+################ COE - B2B ################
+############ Transferência ESSE FSP #############
+ACESSO: ${formState.acesso || 'N/A'}
+OPERADORA: ${formState.operadora || 'N/A'}
+DESIGNAÇÃO DO LINK: ${formState.designacaoLink || 'N/A'}
+DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
+IP MODEM VSAT: ${formState.ipModemVSAT || 'N/A'}
+IP ACELERADOR: ${formState.ipAcelerador || 'N/A'}
+IP CPE: ${formState.ipCPE || 'N/A'}
+DIAGNÓSTICO:
 ${formState.diagnostico || 'N/A'}
 
-[LOG]:
+LOG:
 ${formState.log || 'N/A'}
         `.trim();
         break;
       case 'TX':
         carimboText = `
-[CARIMBO TX]
-[DEFEITO]: ${formState.defeitos.join(', ') || 'N/A'}
-[ENLACE ANALISADO]: ${formState.enlaceAnalizado || 'N/A'}
-[ENLACE FIBRA SECA]: ${formState.enlaceFibraSeca ? 'SIM' : 'NÃO'}
-[HOSTNAME SWT]: ${formState.hostnameSWT || 'N/A'}
-[IP SWT]: ${formState.ipSWT || 'N/A'}
-[SLOT/PORTA(UPLINK)]: ${formState.slotPortaUplink || 'N/A'}
-[SLOT/PORTA(CLIENTE)]: ${formState.slotPortaCliente || 'N/A'}
-[HOSTNAME SW]: ${formState.hostnameSW || 'N/A'}
-[IP SW]: ${formState.ipSW || 'N/A'}
-[SLOT/PORTA SW]: ${formState.slotPortaSW || 'N/A'}
-[VLAN GERÊNCIA]: ${formState.vlanGerencia || 'N/A'}
+################ COE - B2B ################
+############ Transferência TX #############
+DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
+ENLACE ANALISADO: ${formState.enlaceAnalizado || 'N/A'}
+ENLACE FIBRA SECA: ${formState.enlaceFibraSeca ? 'SIM' : 'NÃO'}
+HOSTNAME SWT: ${formState.hostnameSWT || 'N/A'}
+IP SWT: ${formState.ipSWT || 'N/A'}
+SLOT/PORTA(UPLINK): ${formState.slotPortaUplink || 'N/A'}
+SLOT/PORTA(CLIENTE): ${formState.slotPortaCliente || 'N/A'}
+HOSTNAME SW: ${formState.hostnameSW || 'N/A'}
+IP SW: ${formState.ipSW || 'N/A'}
+SLOT/PORTA SW: ${formState.slotPortaSW || 'N/A'}
+VLAN GERÊNCIA: ${formState.vlanGerencia || 'N/A'}
 
 
-[DIAGNÓSTICO]:
+DIAGNÓSTICO:
 ${formState.diagnostico || 'N/A'}
 
-[LOGS]:
+LOGS:
 ${formState.logs || 'N/A'}
         `.trim();
         break;
       case 'PARCEIROS':
         // CORREÇÃO PARCEIROS: Incluindo todos os campos na formatação
         carimboText = `
-[CARIMBO PARCEIROS]
-[DEFEITO]: ${formState.defeitos.join(', ') || 'N/A'}
-[HOSTNAME SWT]: ${formState.hostnameSWT || 'N/A'}
-[IP SWT]: ${formState.ipSWT || 'N/A'}
-[SLOT/PORTA(UPLINK)]: ${formState.slotPortaUplink || 'N/A'}
-[SLOT/PORTA(CLIENTE)]: ${formState.slotPortaCliente || 'N/A'}
-[HOSTNAME SW]: ${formState.hostnameSW || 'N/A'}
-[IP SW]: ${formState.ipSW || 'N/A'}
-[SLOT/PORTA SW]: ${formState.slotPortaSW || 'N/A'}
-[VLAN GERÊNCIA]: ${formState.vlanGerencia || 'N/A'}
+################ COE - B2B ################
+############ Transferência PARCEIROS #############
+DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
+HOSTNAME SWT: ${formState.hostnameSWT || 'N/A'}
+IP SWT: ${formState.ipSWT || 'N/A'}
+SLOT/PORTA(UPLINK): ${formState.slotPortaUplink || 'N/A'}
+SLOT/PORTA(CLIENTE): ${formState.slotPortaCliente || 'N/A'}
+HOSTNAME SW: ${formState.hostnameSW || 'N/A'}
+IP SW: ${formState.ipSW || 'N/A'}
+SLOT/PORTA SW: ${formState.slotPortaSW || 'N/A'}
+VLAN GERÊNCIA: ${formState.vlanGerencia || 'N/A'}
 
 
-[DIAGNÓSTICO]:
+DIAGNÓSTICO:
 ${formState.diagnostico || 'N/A'}
 
-[LOGS]:
+LOGS:
 ${formState.logs || 'N/A'}
         `.trim();
         break;
