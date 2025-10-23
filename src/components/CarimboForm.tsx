@@ -391,6 +391,7 @@ ${formState.logs || 'N/A'}
       case 'TX':
         return (
           <div className="space-y-4">
+            <DefeitoSelect defeitos={['Interrompido', 'Lan Down', 'Degradação/Taxa de Erro', 'Quebra de senha']} />
              <div className="text-white mb-4">
                 Enlace de Transporte Analisado?
                 <input type="checkbox" name="enlaceFibraSeca" checked={formState.enlaceFibraSeca} onChange={handleInputChange} className="mr-2 ml-4" /> Enlace é Atendido via Fibra Seca
