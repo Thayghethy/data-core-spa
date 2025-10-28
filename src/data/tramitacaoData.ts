@@ -10,11 +10,11 @@ export const tramitacaoData = [
 
     // CPE/ONU
     { Categoria: 'GPON', Falha: 'Porta/Sem sincronismo', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
-    { Categoria: 'GPON', Falha: 'Quedas de sincronismo', DSP: 'Diagnostico', FSP: 'Diagnostico', Destino: 'Diagnostico' },
-    { Categoria: 'GPON', Falha: 'Sem configuração', DSP: 'ESSE', FSP: 'N/DADOS', Destino: 'ESSE' },
-    { Categoria: 'GPON', Falha: 'Erros ou atenuação', DSP: 'ESSE', FSP: 'ESSE', Destino: 'ESSE' },
-    { Categoria: 'GPON', Falha: 'Porta/LAN/ONT down', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
-    { Categoria: 'GPON', Falha: 'Sem mac do CPE', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
+    { Categoria: 'GPON', Falha: 'Quedas de sincronismo', DSP: 'Diagnostico', FSP: 'Regionais V2', Destino: 'Diagnostico' },
+    { Categoria: 'GPON', Falha: 'Sem configuração', DSP: 'Diagnóstico', FSP: 'N2 DADOS', Destino: 'ESSE' },
+    { Categoria: 'GPON', Falha: 'Erros ou atenuação', DSP: 'ESSE', FSP: 'Regionais V2', Destino: 'ESSE' },
+    { Categoria: 'GPON', Falha: 'Porta LAN ONT down', DSP: 'ESSE', FSP: 'Regionais V2', Destino: 'ESSE' },
+    { Categoria: 'GPON', Falha: 'Sem mac do CPE', DSP: 'ESSE', FSP: 'Regionais V2', Destino: 'ESSE' },
     { Categoria: 'GPON', Falha: 'Porta PON down (com TA)', DSP: 'Massiva', FSP: 'Massiva', Destino: 'Massiva' },
     { Categoria: 'GPON', Falha: 'Porta PON down e sem TA válida', DSP: 'Pre_massiva', FSP: 'Pre_massiva', Destino: 'Pre_massiva' },
     { Categoria: 'GPON', Falha: 'Sem acesso ao OLT (com TA)', DSP: 'Massiva', FSP: 'Massiva', Destino: 'Massiva' },
