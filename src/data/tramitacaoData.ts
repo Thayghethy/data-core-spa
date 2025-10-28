@@ -6,7 +6,7 @@ export const tramitacaoData = [
     { Categoria: 'PRAPS', Falha: 'Erros ou atenuação', DSP: 'Diagnostico', FSP: '-', Destino: 'Diagnostico' },
     { Categoria: 'PRAPS', Falha: 'Sem acesso ao DSLAM (com TA)', DSP: 'Pre_massiva', FSP: '-', Destino: 'Massiva' },
     { Categoria: 'PRAPS', Falha: 'Sem acesso ao DSLAM e sem TA valida para associação', DSP: 'Pre_massiva', FSP: '-', Destino: 'Pre_massiva' },
-    { Categoria: 'PRAPS', Falha: 'Porta LAN down no modem', DSP: 'ESSE', FSP: 'ESSE', Destino: '-' },
+    { Categoria: 'PRAPS', Falha: 'Porta LAN down no modem', DSP: 'ESSE', FSP: '-', Destino: '-' },
 
     // CPE/ONU
     { Categoria: 'GPON', Falha: 'Porta/Sem sincronismo', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
