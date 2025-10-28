@@ -24,7 +24,7 @@ export const tramitacaoData = [
     { Categoria: 'SWT', Falha: 'Interface entre SWA x SWT em down', DSP: 'TX', FSP: 'Regionais Parceiros', Destino: 'TX' },
     { Categoria: 'SWT', Falha: 'Interface entre SWA x SWT em Up, porém SWT Inacessível', DSP: 'TX', FSP: 'Regionais Parceiros', Destino: 'TX' },
     { Categoria: 'SWT', Falha: 'Interface entre SWD/SWS x SWT em down', DSP: 'TX', FSP: 'Regionais Parceiros', Destino: 'TX' },
-    { Categoria: 'SWT', Falha: 'Interface entre SWD/SWS x SWT em UP, porém SWT Inacessível', DSP: 'TX', FSP: 'RRegionais Parceiros', Destino: 'TX' },
+    { Categoria: 'SWT', Falha: 'Interface entre SWD/SWS x SWT em UP, porém SWT Inacessível', DSP: 'TX', FSP: 'Regionais Parceiros', Destino: 'TX' },
     { Categoria: 'SWT', Falha: 'Interface entre SHE x SSE em down', DSP: 'TX', FSP: 'Regionais Parceiros', Destino: 'TX' },
     { Categoria: 'SWT', Falha: 'Interface entre SWA x SHE em DOWN (radio)', DSP: 'TX', FSP: 'Regionais Parceiros', Destino: 'TX' },
     { Categoria: 'SWT', Falha: 'Interface entre SWA x SHE em down (SDH - DWDM)', DSP: 'N2 TX', FSP: 'N2 TX', Destino: 'TX' }, // Duplicado na planilha, mantido para completude
