@@ -9,7 +9,7 @@ export const tramitacaoData = [
     { Categoria: 'PRAPS', Falha: 'Porta LAN down no modem', DSP: 'ESSE', FSP: '-', Destino: '-' },
 
     // CPE/ONU
-    { Categoria: 'GPON', Falha: 'Porta/Sem sincronismo', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
+    { Categoria: 'GPON', Falha: 'Porta GPON Sem sincronismo', DSP: 'ESSE', FSP: 'Regional V2', Destino: 'ESSE' },
     { Categoria: 'GPON', Falha: 'Quedas de sincronismo', DSP: 'Diagnostico', FSP: 'Regionais V2', Destino: 'Diagnostico' },
     { Categoria: 'GPON', Falha: 'Sem configuração', DSP: 'Diagnóstico', FSP: 'N2 DADOS', Destino: 'ESSE' },
     { Categoria: 'GPON', Falha: 'Erros ou atenuação', DSP: 'ESSE', FSP: 'Regionais V2', Destino: 'ESSE' },
