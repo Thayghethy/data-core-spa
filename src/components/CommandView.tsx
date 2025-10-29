@@ -178,7 +178,7 @@ const SWA_COMMANDS: VendorCommands = {
 // ----------------------------------------------------
 const SWT_COMMANDS: VendorCommands = {
     Datacom: [
-        { command: "VLAN DE USUARIO", description: "Localizar a interface", commandOnly: "VLAN DE USUARIO" },
+        { command: "show vlan id VLAN DE USUARIO", description: "Localizar a interface", commandOnly: "show vlan id" },
         { command: "show int status INTERFACE", description: "Verificar Status da interface", commandOnly: "show int status" },
         { command: "show hardware-status transceivers", description: "Verificar atenuação", commandOnly: "show hardware-status transceivers" },
         { command: "show int table utilization bandwidth", description: "Verificar a utilização da Interface", commandOnly: "show int table utilization bandwidth" },
