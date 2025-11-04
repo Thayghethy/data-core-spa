@@ -123,14 +123,21 @@ const CarimboForm: React.FC<CarimboFormProps> = ({ type, onBack }) => {
 ################ COE - B2B ################
 ############ Transferência ATC #############
 Nº SIGITM: ${formState.sigitm || 'N/A'}
+
 CLIENTE: ${formState.cliente || 'N/A'}
+
 DESIGNADOR: ${formState.designador || 'N/A'}
+
 PRODUTO: ${formState.produto || 'N/A'}
+
 OS/TBS: ${formState.ostbs || 'N/A'}
+
 ARD: ${formState.ard || 'N/A'}
+
 SPLITTER ATC: ${formState.splitter || 'N/A'}
 
 OBSERVAÇÕES:
+
 ${formState.observacoes || 'Nenhuma observação.'}
         `.trim();
         break;
@@ -139,8 +146,11 @@ ${formState.observacoes || 'Nenhuma observação.'}
 ################ COE - B2B ################
 ############ Transferência REGIONAL V2 #############
 DESIGNADOR: ${formState.designador || 'N/A'}
+
 PRODUTO: ${formState.produto || 'N/A'}
+
 VELOCIDADE: ${formState.velocidade || 'N/A'}
+
 ARMÁRIO: ${formState.armario || 'N/A'}
 
 DIAGNÓSTICO:
@@ -168,7 +178,9 @@ ${formState.equipamentoAfetado || 'N/A'}
 ################ COE - B2B ################
 ############ Transferência ESSE CONTROLE #############
 DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
+
 CPE INACESSÍVEL / CPE CLIENTE: ${formState.cpeInacessivel ? 'SIM' : 'NÃO'}
+
 DIAGNÓSTICO:
 ${formState.diagnostico || 'N/A'}
 
@@ -181,12 +193,19 @@ ${formState.logs || 'N/A'}
 ################ COE - B2B ################
 ############ Transferência ESSE FSP #############
 ACESSO: ${formState.acesso || 'N/A'}
+
 OPERADORA: ${formState.operadora || 'N/A'}
+
 DESIGNAÇÃO DO LINK: ${formState.designacaoLink || 'N/A'}
+
 DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
+
 IP MODEM VSAT: ${formState.ipModemVSAT || 'N/A'}
+
 IP ACELERADOR: ${formState.ipAcelerador || 'N/A'}
+
 IP CPE: ${formState.ipCPE || 'N/A'}
+
 DIAGNÓSTICO:
 ${formState.diagnostico || 'N/A'}
 
@@ -199,12 +218,16 @@ ${formState.log || 'N/A'}
 ################ COE - B2B ################
 ############ Transferência TX #############
 DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
+
 ENLACE ANALISADO: ${formState.enlaceAnalizado || 'N/A'}
+
 ENLACE FIBRA SECA: ${formState.enlaceFibraSeca ? 'SIM' : 'NÃO'}
+
 HOSTNAME SWT: ${formState.hostnameSWT || 'N/A'}
 IP SWT: ${formState.ipSWT || 'N/A'}
 SLOT/PORTA(UPLINK): ${formState.slotPortaUplink || 'N/A'}
 SLOT/PORTA(CLIENTE): ${formState.slotPortaCliente || 'N/A'}
+
 HOSTNAME SW: ${formState.hostnameSW || 'N/A'}
 IP SW: ${formState.ipSW || 'N/A'}
 SLOT/PORTA SW: ${formState.slotPortaSW || 'N/A'}
@@ -224,13 +247,21 @@ ${formState.logs || 'N/A'}
 ################ COE - B2B ################
 ############ Transferência PARCEIROS #############
 DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
+
 HOSTNAME SWT: ${formState.hostnameSWT || 'N/A'}
+
 IP SWT: ${formState.ipSWT || 'N/A'}
+
 SLOT/PORTA(UPLINK): ${formState.slotPortaUplink || 'N/A'}
+
 SLOT/PORTA(CLIENTE): ${formState.slotPortaCliente || 'N/A'}
+
 HOSTNAME SW: ${formState.hostnameSW || 'N/A'}
+
 IP SW: ${formState.ipSW || 'N/A'}
+
 SLOT/PORTA SW: ${formState.slotPortaSW || 'N/A'}
+
 VLAN GERÊNCIA: ${formState.vlanGerencia || 'N/A'}
 
 
