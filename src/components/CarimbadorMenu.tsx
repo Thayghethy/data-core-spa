@@ -36,9 +36,9 @@ const CarimbadorMenu: React.FC<CarimbadorMenuProps> = ({ onSelectCarimbo, onBack
   const backButtonStyle = "bg-[#7E30E1] text-white py-2 px-6 rounded-lg font-semibold uppercase hover:bg-[#9B50E6] transition duration-200";
 
   return (
-    <Header />
+   
     <div className="flex flex-col h-full p-4">
-      
+       <Header />
       {/* Botão Voltar (No canto superior direito) */}
       <div className="flex justify-end mb-16">
         <button onClick={onBack} className={backButtonStyle}>
