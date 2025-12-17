@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from './Header';
 
 // Definindo o tipo de carimbo com base no App.tsx
 type CarimboType = 'ATC' | 'ESSE_FSP' | 'ESSE_CONTROLE' | 'MASSIVA' | 'REGIONAL_V2' | 'PARCEIROS' | 'TX';
@@ -467,6 +468,7 @@ ${formState.logs || 'N/A'}
 
   return (
     <div className="max-w-4xl mx-auto py-4">
+      <Header />
       {/* Botão Voltar */}
       <div className="flex justify-end mb-8">
         <button onClick={onBack} className={backButtonStyle}>
