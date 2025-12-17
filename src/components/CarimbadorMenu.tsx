@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 
 // O type CarimboType deve ser importado ou definido aqui (assumindo a definição do App.tsx)
 type CarimboType = 'ATC' | 'ESSE_FSP' | 'ESSE_CONTROLE' | 'MASSIVA' | 'REGIONAL_V2' | 'PARCEIROS' | 'TX' | null;
@@ -38,7 +37,6 @@ const CarimbadorMenu: React.FC<CarimbadorMenuProps> = ({ onSelectCarimbo, onBack
   return (
    
     <div className="flex flex-col h-full p-4">
-       <Header />
       {/* Botão Voltar (No canto superior direito) */}
       <div className="flex justify-end mb-16">
         <button onClick={onBack} className={backButtonStyle}>
