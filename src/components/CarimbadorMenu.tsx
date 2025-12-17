@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header.tsx';
 
 // O type CarimboType deve ser importado ou definido aqui (assumindo a definição do App.tsx)
 type CarimboType = 'ATC' | 'ESSE_FSP' | 'ESSE_CONTROLE' | 'MASSIVA' | 'REGIONAL_V2' | 'PARCEIROS' | 'TX' | null;
@@ -35,6 +36,7 @@ const CarimbadorMenu: React.FC<CarimbadorMenuProps> = ({ onSelectCarimbo, onBack
   const backButtonStyle = "bg-[#7E30E1] text-white py-2 px-6 rounded-lg font-semibold uppercase hover:bg-[#9B50E6] transition duration-200";
 
   return (
+    <Header/>
     <div className="flex flex-col h-full p-4">
       
       {/* Botão Voltar (No canto superior direito) */}
