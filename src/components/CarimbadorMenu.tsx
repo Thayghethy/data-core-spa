@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from 'Header.tsx';
+import Header from 'Header';
 
 // O type CarimboType deve ser importado ou definido aqui (assumindo a definição do App.tsx)
 type CarimboType = 'ATC' | 'ESSE_FSP' | 'ESSE_CONTROLE' | 'MASSIVA' | 'REGIONAL_V2' | 'PARCEIROS' | 'TX' | null;
