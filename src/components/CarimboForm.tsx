@@ -147,11 +147,8 @@ ${formState.observacoes || 'Nenhuma observação.'}
 ################ COE - B2B ################
 ############ Transferência REGIONAL V2 #############
 DESIGNADOR: ${formState.designador || 'N/A'}
-
 PRODUTO: ${formState.produto || 'N/A'}
-
 VELOCIDADE: ${formState.velocidade || 'N/A'}
-
 ARMÁRIO: ${formState.armario || 'N/A'}
 
 DIAGNÓSTICO:
@@ -246,23 +243,17 @@ ${formState.logs || 'N/A'}
         // CORREÇÃO PARCEIROS: Incluindo todos os campos na formatação
         carimboText = `
 ################ COE - B2B ################
-############ Transferência PARCEIROS #############
+############ Transferência SWT FSP #############
 DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
 
 HOSTNAME SWT: ${formState.hostnameSWT || 'N/A'}
-
 IP SWT: ${formState.ipSWT || 'N/A'}
-
 SLOT/PORTA(UPLINK): ${formState.slotPortaUplink || 'N/A'}
-
 SLOT/PORTA(CLIENTE): ${formState.slotPortaCliente || 'N/A'}
 
 HOSTNAME SW: ${formState.hostnameSW || 'N/A'}
-
 IP SW: ${formState.ipSW || 'N/A'}
-
 SLOT/PORTA SW: ${formState.slotPortaSW || 'N/A'}
-
 VLAN GERÊNCIA: ${formState.vlanGerencia || 'N/A'}
 
 
