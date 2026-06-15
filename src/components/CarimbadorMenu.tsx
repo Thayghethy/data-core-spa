@@ -17,7 +17,7 @@ const CarimbadorMenu: React.FC<CarimbadorMenuProps> = ({ onSelectCarimbo, onBack
     { label: 'ESSE FSP', key: 'ESSE_FSP' },
     { label: 'ESSE Controle', key: 'ESSE_CONTROLE' }, 
     { label: 'Massiva', key: 'MASSIVA' },
-    { label: 'Parceiros', key: 'PARCEIROS' },
+    { label: 'SWT FSP', key: 'PARCEIROS' },
     { label: 'Regional V2', key: 'REGIONAL_V2' },
     { label: 'TX', key: 'TX' },
   ];
