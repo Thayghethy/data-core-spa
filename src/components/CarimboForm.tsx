@@ -126,15 +126,10 @@ const CarimboForm: React.FC<CarimboFormProps> = ({ type, onBack }) => {
 Nº SIGITM: ${formState.sigitm || 'N/A'}
 
 CLIENTE: ${formState.cliente || 'N/A'}
-
 DESIGNADOR: ${formState.designador || 'N/A'}
-
 PRODUTO: ${formState.produto || 'N/A'}
-
 OS/TBS: ${formState.ostbs || 'N/A'}
-
 ARD: ${formState.ard || 'N/A'}
-
 SPLITTER ATC: ${formState.splitter || 'N/A'}
 
 OBSERVAÇÕES:
@@ -193,15 +188,10 @@ ${formState.logs || 'N/A'}
 ACESSO: ${formState.acesso || 'N/A'}
 
 OPERADORA: ${formState.operadora || 'N/A'}
-
 DESIGNAÇÃO DO LINK: ${formState.designacaoLink || 'N/A'}
-
 DEFEITO: ${formState.defeitos.join(', ') || 'N/A'}
-
 IP MODEM VSAT: ${formState.ipModemVSAT || 'N/A'}
-
 IP ACELERADOR: ${formState.ipAcelerador || 'N/A'}
-
 IP CPE: ${formState.ipCPE || 'N/A'}
 
 DIAGNÓSTICO:
